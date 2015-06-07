@@ -1,0 +1,10 @@
+suites:
+  console_suite:
+    namespace: Port\Console
+    psr4_prefix: Port\Console
+formatter.name: pretty
+extensions:
+  - PhpSpec\Extension\CodeCoverageExtension
+code_coverage:
+  format: clover
+  output: coverage.clover
