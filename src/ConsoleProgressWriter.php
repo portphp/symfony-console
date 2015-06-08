@@ -83,20 +83,4 @@ class ConsoleProgressWriter implements Writer
     {
         $this->progress->finish();
     }
-
-    /**
-     * @return string
-     */
-    public function getVerbosity()
-    {
-        return $this->verbosity;
-    }
-
-    /**
-     * @return integer
-     */
-    public function getRedrawFrequency()
-    {
-        return $this->redrawFrequency;
-    }
 }

@@ -15,11 +15,6 @@ class ConsoleTableWriter implements Writer
     use WriterTemplate;
 
     /**
-     * @var OutputInterface
-     */
-    private $output;
-
-    /**
      * @var Table
      */
     private $table;
@@ -30,11 +25,9 @@ class ConsoleTableWriter implements Writer
     private $firstItem;
 
     /**
-     * @param OutputInterface $output
-     * @param Table           $table
+     * @param Table $table
      */
-    public function __construct(OutputInterface $output, Table $table) {
-        $this->output = $output;
+    public function __construct(Table $table) {
         $this->table = $table;
     }
 
@@ -59,13 +52,5 @@ class ConsoleTableWriter implements Writer
         $this->table->render();
 
         $this->firstItem = null;
-    }
-
-    /**
-     * @return Table
-     */
-    public function getTable()
-    {
-        return $this->table;
     }
 }

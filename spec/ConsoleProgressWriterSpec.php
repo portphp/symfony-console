@@ -20,16 +20,6 @@ class ConsoleProgressWriterSpec extends ObjectBehavior
         $this->shouldHaveType('Port\Console\ConsoleProgressWriter');
     }
 
-    function it_has_verbosity()
-    {
-        $this->getVerbosity()->shouldReturn('debug');
-    }
-
-    function it_has_a_redraw_frequency()
-    {
-        $this->getRedrawFrequency()->shouldReturn(1);
-    }
-
     function it_writes_items(CountableReader $reader, OutputInterface $output, OutputFormatterInterface $outputFormatter)
     {
         $reader->count()->willReturn(2);
