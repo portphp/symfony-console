@@ -1,5 +1,5 @@
 {
-    "name": "portphp/consoler-adapter",
+    "name": "portphp/console-adapter",
     "description": "Symfony Console tools for PortPHP",
     "license": "MIT",
     "homepage": "https://github.com/portphp",
@@ -23,7 +23,9 @@
         "docs": "https://portphp.readthedocs.org"
     },
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "portphp/portphp": "^1.0@dev",
+        "symfony/console": "~2.5"
     },
     "autoload": {
         "psr-4": {
