@@ -1,5 +1,5 @@
 {
-    "name": "portphp/console-adapter",
+    "name": "portphp/symfony-console-adapter",
     "description": "Symfony Console tools for PortPHP",
     "license": "MIT",
     "homepage": "https://github.com/portphp",
@@ -14,12 +14,12 @@
         },
         {
             "name": "Community contributors",
-            "homepage": "https://github.com/portphp/console-adapter/graphs/contributors"
+            "homepage": "https://github.com/portphp/symfony-console-adapter/graphs/contributors"
         }
     ],
     "support": {
         "issues": "https://github.com/portphp/portphp/issues",
-        "source": "https://github.com/portphp/console-adapter",
+        "source": "https://github.com/portphp/symfony-console-adapter",
         "docs": "https://portphp.readthedocs.org"
     },
     "require": {
@@ -29,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Port\\Console\\": "src/"
+            "Port\\SymfonyConsole\\": "src/"
         }
     },
     "require-dev": {

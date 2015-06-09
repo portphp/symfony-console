@@ -1,6 +1,6 @@
 <?php
 
-namespace Port\Console;
+namespace Port\SymfonyConsole;
 
 use Port\Reader\CountableReader;
 use Port\Writer;
@@ -12,7 +12,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  *
  * @author David de Boer <david@ddeboer.nl>
  */
-class ConsoleProgressWriter implements Writer
+class ProgressWriter implements Writer
 {
     /**
      * @var OutputInterface

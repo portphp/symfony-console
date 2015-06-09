@@ -1,6 +1,6 @@
 <?php
 
-namespace Port\Console;
+namespace Port\SymfonyConsole;
 
 use Port\Writer;
 use Port\Writer\WriterTemplate;
@@ -10,7 +10,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 /**
  * @author Igor Mukhin <igor.mukhin@gmail.com>
  */
-class ConsoleTableWriter implements Writer
+class TableWriter implements Writer
 {
     use WriterTemplate;
 
