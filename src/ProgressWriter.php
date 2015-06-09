@@ -12,7 +12,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  *
  * @author David de Boer <david@ddeboer.nl>
  */
-class ConsoleProgressWriter implements Writer
+class ProgressWriter implements Writer
 {
     /**
      * @var OutputInterface

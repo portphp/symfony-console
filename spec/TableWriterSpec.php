@@ -6,7 +6,7 @@ use Symfony\Component\Console\Helper\Table;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
-class ConsoleTableWriterSpec extends ObjectBehavior
+class TableWriterSpec extends ObjectBehavior
 {
     function let(Table $table)
     {
@@ -15,7 +15,7 @@ class ConsoleTableWriterSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('Port\SymfonyConsole\ConsoleTableWriter');
+        $this->shouldHaveType('Port\SymfonyConsole\TableWriter');
     }
 
     function it_writes_items(Table $table)

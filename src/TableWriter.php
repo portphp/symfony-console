@@ -10,7 +10,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 /**
  * @author Igor Mukhin <igor.mukhin@gmail.com>
  */
-class ConsoleTableWriter implements Writer
+class TableWriter implements Writer
 {
     use WriterTemplate;
 

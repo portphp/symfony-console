@@ -8,7 +8,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
-class ConsoleProgressWriterSpec extends ObjectBehavior
+class ProgressWriterSpec extends ObjectBehavior
 {
     function let(OutputInterface $output, CountableReader $reader)
     {
@@ -17,7 +17,7 @@ class ConsoleProgressWriterSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('Port\SymfonyConsole\ConsoleProgressWriter');
+        $this->shouldHaveType('Port\SymfonyConsole\ProgressWriter');
     }
 
     function it_writes_items(CountableReader $reader, OutputInterface $output, OutputFormatterInterface $outputFormatter)
