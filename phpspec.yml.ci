@@ -1,7 +1,7 @@
 suites:
   console_suite:
-    namespace: Port\Console
-    psr4_prefix: Port\Console
+    namespace: Port\SymfonyConsole
+    psr4_prefix: Port\SymfonyConsole
 formatter.name: pretty
 extensions:
   - PhpSpec\Extension\CodeCoverageExtension

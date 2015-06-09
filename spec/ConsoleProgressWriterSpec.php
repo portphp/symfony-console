@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\Port\Console;
+namespace spec\Port\SymfonyConsole;
 
 use Port\Reader\CountableReader;
 use Symfony\Component\Console\Formatter\OutputFormatterInterface;
@@ -17,7 +17,7 @@ class ConsoleProgressWriterSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('Port\Console\ConsoleProgressWriter');
+        $this->shouldHaveType('Port\SymfonyConsole\ConsoleProgressWriter');
     }
 
     function it_writes_items(CountableReader $reader, OutputInterface $output, OutputFormatterInterface $outputFormatter)

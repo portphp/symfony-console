@@ -1,6 +1,6 @@
 <?php
 
-namespace Port\Console;
+namespace Port\SymfonyConsole;
 
 use Port\Writer;
 use Port\Writer\WriterTemplate;

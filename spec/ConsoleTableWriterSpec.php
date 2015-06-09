@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\Port\Console;
+namespace spec\Port\SymfonyConsole;
 
 use Symfony\Component\Console\Helper\Table;
 use PhpSpec\ObjectBehavior;
@@ -15,7 +15,7 @@ class ConsoleTableWriterSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('Port\Console\ConsoleTableWriter');
+        $this->shouldHaveType('Port\SymfonyConsole\ConsoleTableWriter');
     }
 
     function it_writes_items(Table $table)
