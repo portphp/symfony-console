@@ -5,7 +5,6 @@ namespace Port\SymfonyConsole;
 use Port\Writer;
 use Port\Writer\WriterTemplate;
 use Symfony\Component\Console\Helper\Table;
-use Symfony\Component\Console\Output\OutputInterface;
 
 /**
  * @author Igor Mukhin <igor.mukhin@gmail.com>
