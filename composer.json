@@ -1,5 +1,5 @@
 {
-    "name": "portphp/symfony-console",
+    "name": "sqills/port-symfony-console",
     "description": "Symfony Console tools for PortPHP",
     "license": "MIT",
     "homepage": "https://github.com/portphp",
