@@ -1,5 +1,5 @@
 {
-    "name": "portphp/symfony-console",
+    "name": "sqills/port-symfony-console",
     "description": "Symfony Console tools for PortPHP",
     "license": "MIT",
     "homepage": "https://github.com/portphp",
@@ -23,9 +23,9 @@
         "docs": "https://portphp.readthedocs.org"
     },
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=7.1.0",
         "portphp/portphp": "^1.0.0",
-        "symfony/console": "^2.7 || ^3.0"
+        "symfony/console": "^4.0"
     },
     "autoload": {
         "psr-4": {
@@ -33,8 +33,8 @@
         }
     },
     "require-dev": {
-        "phpspec/phpspec": "^2.1",
-        "henrikbjorn/phpspec-code-coverage" : "^1.0"
+        "phpspec/phpspec": "^4.2.3",
+        "leanphp/phpspec-code-coverage" : "^4.2"
     },
     "extra": {
         "branch-alias": {
