@@ -46,10 +46,15 @@ class TableWriter implements Writer
     /**
      * {@inheritdoc}
      */
-    public function finish() {
-        $this->table->setHeaders(array_keys($this->firstItem));
-        $this->table->render();
+    public function finish() {    	
+        if(!is_null($this->firstItem)) {
+		    $this->table->setHeaders(array_keys($this->firstItem));
+	    }else{
+		    $this->table->setHeaders(array('Result'));
+		    $this->table->addRow(array('No items processed.'));
+		}
 
+	    $this->table->render();
         $this->firstItem = null;
     }
 }
