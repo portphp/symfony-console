@@ -38,4 +38,11 @@ class TableWriterSpec extends ObjectBehavior
 
         $this->finish();
     }
+
+    function it_handles_zero_items(Table $table)
+    {
+        $table->setHeaders([])->shouldBeCalled();
+        $table->render()->shouldBeCalled();
+        $this->finish();        
+    }
 }
