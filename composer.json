@@ -14,12 +14,12 @@
         },
         {
             "name": "Community contributors",
-            "homepage": "https://github.com/portphp/symfony-console-adapter/graphs/contributors"
+            "homepage": "https://github.com/portphp/symfony-console/graphs/contributors"
         }
     ],
     "support": {
         "issues": "https://github.com/portphp/portphp/issues",
-        "source": "https://github.com/portphp/symfony-console-adapter",
+        "source": "https://github.com/portphp/symfony-console",
         "docs": "https://portphp.readthedocs.org"
     },
     "require": {
