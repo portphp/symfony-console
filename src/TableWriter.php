@@ -47,7 +47,8 @@ class TableWriter implements Writer
      * {@inheritdoc}
      */
     public function finish() {
-        $this->table->setHeaders(array_keys($this->firstItem));
+        $headers = $this->firstItem ? array_keys($this->firstItem) : [];
+        $this->table->setHeaders($headers);
         $this->table->render();
 
         $this->firstItem = null;
