@@ -20,8 +20,8 @@ class TableWriterSpec extends ObjectBehavior
 
     function it_writes_items(Table $table)
     {
-        $table->addRow(Argument::type('array'))->shouldBeCalledTimes(2);
-        $table->setHeaders(['first', 'second'])->shouldBeCalled();
+        $table->addRow(Argument::type('array'))->willReturn($table)->shouldBeCalledTimes(2);
+        $table->setHeaders(['first', 'second'])->willReturn($table)->shouldBeCalled();
         $table->render()->shouldBeCalled();
 
         $this->prepare();
@@ -41,8 +41,8 @@ class TableWriterSpec extends ObjectBehavior
 
     function it_handles_zero_items(Table $table)
     {
-        $table->setHeaders([])->shouldBeCalled();
+        $table->setHeaders([])->willReturn($table)->shouldBeCalled();
         $table->render()->shouldBeCalled();
-        $this->finish();        
+        $this->finish();
     }
 }
