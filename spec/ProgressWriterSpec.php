@@ -22,10 +22,14 @@ class ProgressWriterSpec extends ObjectBehavior
 
     function it_writes_items(CountableReader $reader, OutputInterface $output, OutputFormatterInterface $outputFormatter)
     {
+        $outputFormatter->isDecorated()->willReturn(false);
+        $outputFormatter->setDecorated(false)->willReturn();
+        $outputFormatter->format(Argument::any())->willReturn(null);
+
         $reader->count()->willReturn(2);
         $output->isDecorated()->willReturn(true);
         $output->getFormatter()->willReturn($outputFormatter);
-        $output->getVerbosity()->willReturn('debug');
+        $output->getVerbosity()->willReturn(OutputInterface::VERBOSITY_DEBUG);
         $output->write(Argument::type('string'))->shouldBeCalled();
 
         $this->prepare();
